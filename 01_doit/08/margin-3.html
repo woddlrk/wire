@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>박스모델 - 마진 중첩</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    div[id] {
+      width: 200px;
+      /* 너비 */
+      height: 100px;
+      /* 높이 */
+      /* Do it! 마진 추가하기 */
+      /* 마진 병합/중첩 현상 */
+      margin: 100px;
+    }
+
+    #box2 {
+      margin-top: 200px;
+    }
+
+    #box1 {
+      margin-bottom: 500px;
+    }
+
+    #box1,
+    .box1 {
+      background: rgb(0, 77, 243);
+    }
+
+    #box2,
+    .box2 {
+      background: rgb(255, 72, 0);
+    }
+
+    #box3,
+    .box3 {
+      background: rgb(18, 219, 0);
+    }
+
+
+    .container div {
+      display: inline-block;
+      width: 200px;
+      height: 100px;
+      margin: 50px;
+    }
+
+    .container .box2 {
+      margin: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="box1"></div>
+  <div id="box2"></div>
+  <div id="box3"></div>
+  <div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .td{
+            width: 100px;
+            height: 52px;
+            border: 2px solid#ccc;
+            box-sizing: border-box;
+            float: left;
+        }
+        .tr::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .table{
+            border: 2px solid#ccc;
+            width: 204px;
+            height: 54px;
+            box-sizing: border-box;
+        }
+        .table:nth-child(1){
+            height: 108px;
+        }
+    </style>
+</head>
+<body>
+    <!-- .table>(.tr>.td*2)*2 -->
+     <div class="table">
+        <div class="tr">
+            <div class="td"></div>
+            <div class="td"></div>
+        </div>
+        <div class="tr">
+            <div class="td"></div>
+            <div class="td"></div>
+        </div>
+        <div class="table"></div>
+       </div>
+</body>
+</html>

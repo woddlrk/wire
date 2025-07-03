@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>poistion</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.container {
+			height: 300px;
+			width: 500px;
+			border: 3px solid #000;
+			position: relative;
+			/* 샹대배치
+			자기자신이 기준
+			 */
+			 left: 100px;
+		}
+
+		.box {
+			width: 100px;
+			height: 100px;
+		}
+
+		.box:nth-child(1) {
+			background-color: red;
+		}
+
+		.box:nth-child(2) {
+			background-color: green;
+		}
+
+		.box:nth-child(3) {
+			background-color: blue;
+		}
+    h2:nth-child(1){
+      background-color: pink;
+    }
+    h2:nth-child(3){
+      background-color: skyblue;
+    }
+	</style>
+  <style>
+    /* position */
+    .box{
+      position: absolute;
+      /* 웹브라우저가 기준 
+          absolute :절대적
+          relative
+          fixed
+          sticky
+          */
+    }
+    .box:nth-of-type(1){
+      left: 10px;
+      top: 10px;
+      z-index: 10;
+    }
+    .box:nth-of-type(2){
+      left: 50px;
+      top: 50px;
+      z-index: 10;
+    }
+    .box:nth-of-type(3){
+      left: 90px;
+      top: 90px;
+      z-index: 11;
+    }
+  </style>
+</head>
+
+<body>
+	<h2>Lorem ipsum dolor amet</h2>
+	<div class="container">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+	<h2>Lorem ipsum dolor amet</h2>
+</body>
+
+</html>

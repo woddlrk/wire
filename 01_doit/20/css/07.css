@@ -1,0 +1,42 @@
+.wrap {
+    background: #f0f0f0;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+}
+
+.box {
+    transition: all 3s;
+    width: 50px;
+    height: 50px;
+    border: 1px solid pink;
+    box-shadow: inset 0 0 15px -5px rgba(0, 0, 0, 0), 0 0 15px -5px rgba(0, 0, 0, 0);
+    animation: rotate 1s 1 steps(5, end) nome;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    animation-timing-function: steps(15, end);
+    animation-fill-mode: both;
+    animation-fill-mode: none;
+    animation-fill-mode: backwards;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-direction: reverse;
+    animation-direction: alternate;
+}
+
+.box:hover {
+    box-shadow: inset 0 0 15px -5px rgba(0, 0, 0, 0.5), 0 0 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes rotate {
+    from {
+        background-color: pink;
+    }
+
+    to {
+        background-color: lightblue;
+        transform: scale(1, 3) translate(100px, 100px) rotate(360deg);
+    }
+}

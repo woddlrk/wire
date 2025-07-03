@@ -1,0 +1,38 @@
+/* .wrap { */
+.inner {
+  padding: 0 2vw;
+  background: rgba(255, 255, 255, .2);
+  height: inherit;
+}
+
+header {
+  position: absolute;
+  background: var(--gn10);
+  height: 100px;
+  left: 0;
+  right: 0;
+}
+
+main {
+  position: relative;
+  background: var(--gn40);
+  top: 100px;
+}
+
+.sec1 {
+  width: 100%;
+  height: 100vh;
+  background: var(--gn40);
+}
+
+.sec2 {
+  width: 100%;
+  height: 100vh;
+  background: var(--gn90);
+}
+
+.sec3 {
+  width: 100%;
+  height: 100vh;
+  background: var(--gn40);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식선택자(selector2)</title>
+    <style>
+       .bbox>p{
+        color: blue;
+       }
+       .bbox+p{
+        color: red;
+       }
+       li>p{
+        color: pink;
+       }
+       ul>li:nth-of-type(2){
+        color: pink;
+       }
+      
+    </style>
+</head>
+<body>
+    <!-- .bbox>p+ul+p -->
+   <div class="bbox">
+        <p>7월의 여행지</p>
+        
+        <ul>    
+            <li>
+                <p>1주차 여행지</p>
+            </li>
+            <li>
+                <p>2주차 여행지</p>
+            </li>
+        </ul>
+        <p>8월의 여행지</p>
+    </div>
+    <p>내년의 여행지</p>    
+</body>
+</html>

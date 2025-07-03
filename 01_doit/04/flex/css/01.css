@@ -1,0 +1,17 @@
+/* 부모박스-> 플랙스 컨테이너 */
+/* 자식박스-> 플랙스 아이템 */
+.container{
+display: flex;
+}
+#opt1{
+    flex-direction: row;
+}
+#opt2{
+    flex-direction: row-reverse;
+}
+#opt3{
+    flex-direction: column;
+}
+#opt4{
+    flex-direction: column-reverse;
+}

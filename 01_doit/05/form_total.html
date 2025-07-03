@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이 세상의 모든 폼</title>
+</head>
+
+<body>
+    <h1>라디오와 체크박스</h1>
+    <!-- fieldset>legend+p>b -->
+    <form action="#">
+        <fieldset>
+            <legend>주문할 상품선택</legend>
+            <p><b>주문할 상품을 선택하세요</b></p>
+            <!-- ul>li>label>input -->
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" value="s_3" name="pro" checked>
+                        선물용 3KG
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" value="s_5" name="pro">
+                        선물용 5KG
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" value="f_3" name="pro">
+                        가정용 3KG
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="checkbox" value="f_5" name="pro">
+                        가정용 5KG
+                    </label>
+                </li>
+            </ul>
+
+            <p><b>포장선택</b></p>
+            <ul>
+                <li>
+                    <label>
+                        <input type="radio" name="gift" value="yes" checked>선물포장
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="radio" name="gift" value="no">선물포장 안 함
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+    <hr>
+    <h2>예약문의</h2>
+    <form action="#" method="post">
+        <!-- 
+            placeholder: 임시안내문
+            value: 서버에 전송되는 값 
+        -->
+        <p>
+            <label>작성자:
+                <input type="text" name="u_name" placeholder="작성자명을 입력하세요" value="익명" required>
+            </label>
+        </p>
+
+        <p>
+            <label>비밀번호:
+                <input name="u_pw" type="password" autofocus>
+            </label>
+        </p>
+
+        <p>
+            <!-- ######-#######
+                  일정한 형식에 맞는지를 검사
+                  정규식을 알아야 함 -->
+            <label>주민등록번호:
+                <input name="u_idNum" type="text" pattern="\d{6}-\{7}">
+            </label>
+        </p>
+
+        <p>
+            <label>이메일: <input type="u_email" type="email" autocomplete="on"></label>
+        </p>
+
+        <p>
+            <label>연락처: <input type="u_tel" type="tel"></label>
+        </p>
+
+        <P>
+            <label>투숙날짜:<input type="date" type="date"></label>
+        </P>
+
+        <p>
+            <label>투숙일시:<input type="datetime-local" name="u_datelocal">
+            </label>
+        </p>
+        <p><label>년월: <input type="month" name="u_month"></label></p>
+        <p><label>주간:<input type="week" name="u_week"></label></p>
+        <p><label>시간:<input type="time" name="u_time"></label></p>
+        <p><label>color:<input type="color" name="u_color"></label></p>
+        <p><label>수량:<input type="number" name="u_number" min="0" max="5"></label></p>
+        <p><label>search:<input type="search" name="u_search"></label></p>
+        <p><label>Url:<input type="url" name="u_url"></label></p>
+        <p><label>평점:<input type="range" name="u_range" min="1" max="5" step="1"></laber></p>
+        <p><label>사진:<input type="file" name="u_pic"></laber></p>
+        <p><label>갤러리:<input type="file" name="u_gallery" multiple></label></p>
+               <h3>시리얼번호</h3>  
+        <ul>
+            <li>
+             <label for="u_serial"></label><input type="text" name="u_serial" id="u_serial" placeholder="시리얼 번호를 입력하세요">
+             <input type="button" value="이전"> 
+             <button disabled>다음</button>    
+            </li>
+            <li><label for="u_book">선택한 책:</label><input type="text" id="u_book" value="html책" readonly></li>
+            <li>배송메시지:
+                <textarea name="mag" id="u_mag" cols="100" rows="5"></textarea>
+            </li>
+            <li>
+                <select name="u_menu" multiple>
+                    <option>----점심메뉴를 선택하세요----</option>
+                    <option value="lunch1">순대국</option>
+                    <option value="lunch2">단백질쉐이크-초코</option>
+                    <option value="lunch3">편의점 도시락</option>
+                </select>
+            </li>
+        </ul>
+         <input type="submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+/* 1. 문자셋 지정 */
+@charset 'utf-8';
+/* 2. 초기화 코드 작성 */
+*{
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}

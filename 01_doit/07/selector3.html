@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인접선택자(selector3)</title>
+    <style>
+        p+ul{
+            background: skyblue;
+            width: 300Px;
+        }
+        body>p{
+            font-size: 3em;
+        }
+        ul~p{
+            border:1px solid;
+        }
+        .red,
+        ul{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- .bbox>p+ul+p -->
+   <div class="bbox">
+    <p class="red"></p>
+        <p>7월의 여행지</p>
+        <ul>    
+            <li>
+                <p>1주차 여행지</p>
+            </li>
+            <li>
+                <p>2주차 여행지</p>
+            </li>
+        </ul>
+        <p>8월의 여행지</p>
+        <p>9월의 여행지</p>
+        <p>10월의 여행지</p>
+    </div>
+    <p>내년의 여행지</p>    
+</body>
+</html>

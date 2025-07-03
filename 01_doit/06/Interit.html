@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interit</title>
+    <style>
+        /* serlf, sana-serif
+            특정 글씨체를 지정하는 것이 아닌 글씨체의 유형을 지정
+            */
+        body{
+            font-family: 'Times New Roman', Times, sana-serif;
+            border: 3px solid; 
+            /* border에 solid면(색지정이 안될경우) 글자의 색을 받는다 */
+            color: blueviolet;
+        }
+        span{
+            color: blue;
+            color: inherit;/ /* inherit은 부모요소를 상속받겠다는것 */
+            border: inherit;
+            
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>title</title></h1>
+    <!-- p.box -->
+  <p class="box">
+    Lorem, <span>ipsum dolor</span> sit amet consectetur adipisicing elit. <span>Sed ea officiis tenetur</span> alias debitis eaque adipisci optio <span>hic accusantium</span> iste repellendus <span>commodi eum cumque</span>, laudantium, dolorum, ipsum eveniet fugiat harum.
+  </p>
+</body>
+</html>

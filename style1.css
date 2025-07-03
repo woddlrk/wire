@@ -1,0 +1,12 @@
+.container {
+  background: #eee;
+  padding: 20px;
+}
+
+.title {
+  color: green;
+}
+
+.content {
+  font-size: 18px;
+}

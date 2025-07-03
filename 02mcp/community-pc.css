@@ -1,0 +1,73 @@
+@charset "utf-8";
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #fff;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+.header {
+  width: 1440px;
+  height: 164px;
+  position: relative;
+  background: #fff;
+}
+.nav-bar {
+  width: 100%;
+  height: 40px;
+  background: #d7d8d9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu {
+  display: flex;
+  gap: 40px;
+  margin-left: 164px;
+  list-style: none;
+  padding: 0;
+}
+.nav-menu li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.sns-icons {
+  display: flex;
+  gap: 16px;
+  margin-right: 120px;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+.header-title {
+  position: absolute;
+  left: 500px;
+  top: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+.header-title h1 {
+  color: #ba3632;
+  font-size: 42px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+.header-title p {
+  color: #f2b8a2;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+}

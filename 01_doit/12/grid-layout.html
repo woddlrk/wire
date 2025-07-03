@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="
+https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css
+" rel="stylesheet">
+    <style>
+        .container {
+            width: 1200px;
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(3, 250px);
+            gap: 20px;
+
+        }
+
+        .item1 {
+            background-color: red;
+            grid-row: 1/3;
+            grid-column: 1/2;
+        }
+
+        .item2 {
+            background-color: green;
+            grid-row: 1/2;
+            grid-column: 2/4;
+        }
+
+        .item3 {
+            background-color: blue;
+            grid-row: 2/3;
+            grid-column: 2/3;
+        }
+
+        .item4 {
+            background-color: yellow;
+            grid-row: 2/3;
+            grid-column: 3/4;
+        }
+
+        .item5 {
+            background-color: purple;
+            grid-row: 3/4;
+            grid-column: 1/4;
+        }
+    </style>
+    <style>
+        /* 0~768 */
+        @media screen and (max-width: 768px) {
+            body {
+                background: skyblue;
+            }
+            .container{
+                display: block;
+                width: 720px;
+                margin: 10px auto;
+            }
+            .container>div[class*='item']{
+                height: 200px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+    </div>
+</body>
+
+</html>

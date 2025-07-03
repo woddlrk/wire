@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소선택자</title>
+    <style>
+        p::first-letter{font-size: 150%;}
+        p:first-child{
+            color:blue;
+        }
+        p:last-child{
+            color:red
+        }
+        p:nth-child(3){
+            color: lightblue;
+        }
+        p::before{
+            content: '💖💖';
+        }
+        /* : css2
+           :: css3
+            */
+        p:after{
+            content: '';
+        }
+        p:hover:after{
+            content: '🤦‍♀️🤦‍♂️🤦‍♂️🤷‍♂️'
+
+
+        }
+        .box:after{
+            content:'';
+            background: url(https://img.fortawesome.com/1ce05b4b/v7-icon-grids.png);
+            background-size: 100%;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>menu1</p>
+        <p>menu2</p>
+        <p>menu3</p>
+        <p>menu4</p>
+    </div>
+</body>
+</html>

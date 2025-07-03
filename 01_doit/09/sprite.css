@@ -1,0 +1,28 @@
+.icons{
+    width: 114px;
+    height: 56px;
+    background-color: red;
+    display: flex;
+    cursor: pointer;
+}
+.home{
+    width: 56px;
+    height: 56px;
+    background: url('images/icons@2x.png') no-repeat 0px 0px;
+    background-size: 112px;
+}
+.home:hover{
+    background-position: -56px 0px ;
+}
+.menu{
+    width: 56px;
+    height: 56px;
+    background: url('images/icons@2x.png') no-repeat  0px -56px;
+    background-size: 112px;
+}
+.menu:hover{
+    background-position: -56px -56px;
+}
+.home,.menu{
+    transition: all 0.5s;
+}

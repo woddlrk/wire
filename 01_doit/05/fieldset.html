@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>레드향 주문하기</title>
+</head>
+<body>
+  <h1>레드향 주문하기</h1>
+  <!-- Do it! form 태그 삽입하기 & 그룹으로 묶고 제목 붙이기 -->
+<!-- <form action="register.php" method="get"><form> -->
+  <form action="register.php" method="post"></form>
+  <p>이름: <input type="text"></p>
+  <p>검색: <input type="search"></p>
+  <p><input type="button" value="전송"></p>
+</form>
+<!-- 배송주소:<input type="text"> -->
+ <!--1. form의 속성
+    1.1 action : 사용자 데이터 전송 경로
+    1.2 method : 사용자 데이터 전송 방법
+     1.2.1 get : 주소표시줄에 데이터 노출(엽서같은것)
+     1.2.2 post : 주소표시줄에 데이터 미노출(편지봉투같은것-민감한 정보)
+    -->
+ <form action="#" method="post">
+  <fieldset>
+    <legend>상품선택</legend>
+    <label>상품명</label><input type="text"> <br>
+    <label>상품수량</label><input type="text"> <br>
+</fieldset>
+ <fieldset>
+    <legend>상품정보</legend>
+    <label>주소</label><input type="text"> <br>
+    <label>전화번호</label><input type="text"> 
+</fieldset>
+ </form>
+     <!-- fiedset 폼요소를 그룹핑, legend filedset 제목  -->
+</body>
+</html>

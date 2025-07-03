@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    section {
+      width: 100%;
+      height: 600px;
+      background-color: yellowgreen;
+    }
+
+    .inner {
+      width: 900px;
+      height: 400px;
+      background: lemonchiffon;
+      margin: auto;
+    }
+
+    .menu {
+      width: 100%;
+      height: 100px;
+      /* overflow: hidden; */
+      background: #ff0000;
+    }
+
+    .link {
+      width: 20%;
+      height: 500px;
+      /* background: #ff7b00ac; */
+      position: relative;
+      top: 100px;
+      z-index: 555;
+    }
+
+    .menu:hover {
+      overflow: visible;
+    }
+
+    /* .menu:hover .w100 { */
+    .menu:hover:before {
+      height: 500px;
+    }
+
+    /* .w100 { */
+    .menu:before {
+      content: '';
+      width: 100vw;
+      height: 0;
+      background: black;
+      position: relative;
+      position: absolute;
+      left: 0;
+      top: 100px;
+      z-index: 0;
+    }
+
+    a {
+      color: white;
+    }
+  </style>
+  <style>
+    .popup {
+      position: fixed;
+      width: 420px;
+      height: 250px;
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      box-sizing: border-box;
+      font-size: 24px;
+      z-index: 99999999;
+      left: 50%;
+      transform: translateX(-50%);
+      top:100px;
+      box-shadow:8px 8px 16px rgba(0,0,0,.5);
+      line-height: 1.75;
+    }
+    button{
+      display: block;
+      padding:8px 16px;
+      border-radius:8px;
+      position: absolute;
+      right:20px ;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="popup">
+    해당 사이트는 학습용으로 제작되었으며 프로젝트1 과 무관합니다.
+    구직용 포트폴리오로 상업적 목적이 없음을 알립니다.
+    <button>닫기</button>
+  </div>
+  <div class="wrap">
+    <header></header>
+    <main>
+      <section>
+        <div class="inner">
+          <div class="menu">
+            <div class="link">
+              <a href="#">abc</a>
+              <a href="#">abc</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </div>
+  <script src=" script/js.js"></script>
+</body>
+
+</html>
