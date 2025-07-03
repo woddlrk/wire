@@ -1,0 +1,406 @@
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background: #fff;
+}
+
+.container {
+  width: 1440px;
+  min-height: 1725px;
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  width: 1440px;
+  height: 164px;
+  position: relative;
+}
+
+.nav-bar {
+  width: 1440px;
+  height: 40px;
+  background: #D7D8D9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 40px;
+  margin-left: 164px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 14px;
+}
+
+.sns-icons {
+  display: flex;
+  gap: 16px;
+  margin-right: 120px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  background: #555;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* 임시로 각 SNS별로 색상 다르게 표시 */
+.icon.insta { background: #555; }
+.icon.twitter { background: #555; }
+.icon.facebook { background: #555; }
+
+.header-title {
+  position: absolute;
+  left: 500px;
+  top: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+
+.header-title h1 {
+  width: 364px;
+  text-align: center;
+  color: #BA3632;
+  font-size: 42px;
+  font-weight: 300;
+  text-transform: capitalize;
+  line-height: 42px;
+  margin: 0;
+}
+
+.header-title p {
+  width: 440px;
+  text-align: center;
+  color: #F2B8A2;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 20px;
+  margin: 0;
+}
+
+/* Skills Section */
+.skills-section {
+  width: 1440px;
+  height: 300px;
+  background: #374140;
+  position: relative;
+  margin-top: 214px;
+}
+
+.skills-bg {
+  width: 1110px;
+  height: 300px;
+  background: #D9D9D9;
+  position: absolute;
+  left: 165px;
+  top: 0;
+}
+
+.skills-img {
+  width: 1129px;
+  height: 754px;
+  position: absolute;
+  left: 165px;
+  top: -306px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 100%);
+  box-shadow: 13px 13px 13px rgba(0,0,0,0.13);
+  filter: blur(6.5px);
+}
+
+.skill-card {
+  width: 370px;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.skill-card.figma { left: 164px; top: 0; }
+.skill-card.webdesign { left: 534px; top: 0; }
+.skill-card.uxui { left: 905px; top: 0; }
+
+.skill-icon {
+  width: 64px;
+  height: 64px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.skill-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* Design Section */
+.design-section {
+  width: 1110px;
+  height: 182px;
+  position: absolute;
+  left: 165px;
+  top: 564px;
+}
+
+.design-section h2 {
+  color: #BA3632;
+  font-size: 42px;
+  font-weight: 300;
+  text-transform: capitalize;
+  line-height: 42px;
+  margin: 0 0 20px 0;
+}
+
+.design-desc {
+  display: flex;
+  gap: 30px;
+}
+
+.design-desc p {
+  width: 540px;
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 24px;
+  text-align: justify;
+  margin: 0;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  width: 1440px;
+  height: 525px;
+  background: #F4F1F1;
+  position: absolute;
+  left: 0;
+  top: 800px;
+}
+
+.portfolio-section h2 {
+  color: #BA3632;
+  font-size: 42px;
+  font-weight: 300;
+  text-transform: capitalize;
+  line-height: 42px;
+  margin: 50px 0 0 165px;
+}
+
+.portfolio-list {
+  display: flex;
+  gap: 32px;
+  position: absolute;
+  left: 165px;
+  top: 131px;
+}
+
+.portfolio-item {
+  width: 254px;
+  height: 254px;
+  position: relative;
+}
+
+.portfolio-item img {
+  width: 254px;
+  height: 254px;
+  display: block;
+}
+
+.portfolio-caption {
+  width: 254px;
+  height: 50px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 24px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-controls {
+  position: absolute;
+  left: 99px;
+  top: 240px;
+  display: flex;
+  gap: 1200px;
+}
+
+.portfolio-prev, .portfolio-next {
+  width: 36px;
+  height: 36px;
+  background: #555;
+  border-radius: 4px;
+  opacity: 0.6;
+  border: none;
+  cursor: pointer;
+}
+
+.portfolio-more {
+  position: absolute;
+  left: 592px;
+  top: 415px;
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 20px;
+  padding: 20px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Footer */
+.footer {
+  width: 1440px;
+  height: 400px;
+  background: #374140;
+  position: absolute;
+  left: 0;
+  top: 1325px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+
+.footer-blog, .footer-contact, .footer-subscribe {
+  flex: 1 1 333px;
+  max-width: 349px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-blog h3,
+.footer-contact h3,
+.footer-subscribe h3 {
+  color: #E35765;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 31.2px;
+  margin: 0 0 10px 0;
+}
+
+.footer-blog ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-blog li {
+  margin-bottom: 10px;
+}
+
+.blog-title {
+  color: #9D9D9D;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 14px;
+  display: block;
+}
+
+.blog-date {
+  color: #9D9D9D;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 12px;
+  display: block;
+}
+
+.footer-contact address {
+  color: #9D9D9D;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.footer-subscribe form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-subscribe input[type="text"],
+.footer-subscribe input[type="email"] {
+  width: 100%;
+  height: 40px;
+  padding: 8px 13px;
+  background: #4F5554;
+  color: rgba(255,255,255,0.5);
+  font-size: 18px;
+  font-weight: 400;
+  border: 1px solid #6D6D6D;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.footer-subscribe button {
+  width: 100%;
+  height: 40px;
+  background: #E35765;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.footer-copyright {
+  width: 100%;
+  background: #1E2423;
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 20px;
+  padding: 10px 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

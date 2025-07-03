@@ -1,0 +1,40 @@
+@charset 'utf-8';
+
+.fl {
+    float: left;
+}
+
+.cf::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header {
+    background-color: red;
+}
+
+main {
+    background-color: blue;
+}
+
+footer {
+    background-color: green;
+}
+
+nav {
+    background-color: #64cc2f;
+}
+
+section {
+    background-color: #ff2ba0;
+}
+
+aside {
+    background-color: #ffff2f;
+}
+
+.wrap {
+    width: 500px;
+    margin: 0 auto;
+}

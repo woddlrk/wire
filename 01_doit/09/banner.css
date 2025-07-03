@@ -1,0 +1,38 @@
+.banner {
+    width: 480px;
+    height: 200px;
+    background: #f0f0f0 url(images/sunflower.png) no-repeat;
+    background-size: 110%;
+    background-position: -36px -126px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right {
+    /* /*  float: right; margin-top: 26px;* */
+    width: 270px;
+    height: 150px;
+    background: #FFD40199;
+    padding: 16px 8px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: Pretendard;
+    font-weight: 700px;
+    font-size: 42px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #2562E0;
+    margin-bottom: 14px;
+}
+
+p {
+    font-family: Pretendard;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: capitalize;
+    color: #515151;
+}

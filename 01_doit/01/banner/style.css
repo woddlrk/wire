@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'MaruBuri', sans-serif;
+}
+
+.banner {
+  background: url('banner.jpg') no-repeat center center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  color: #fff;
+  position: relative;
+}
+
+.text-left, .text-right {
+  width: 50%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.text-left {
+  align-self: flex-end;
+  color: #e3e0d5;
+}
+
+.text-left h2 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.text-left p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #d5cbbf;
+}
+
+.text-right {
+  text-align: right;
+  align-self: flex-start;
+  padding-top: 4rem;
+  color: #f4a634;
+}
+
+.text-right h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #e5b527;
+}
+
+.text-right p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #f8a825;
+}

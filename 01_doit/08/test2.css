@@ -1,0 +1,27 @@
+@charset 'utf-8';
+
+ul.gallery li{
+    float: left;
+    width: 23%;
+    width: calc(23% - 80px);
+    text-align: center;
+    margin: 0 10px;
+}
+ul.gallery li h3{
+    background-color: pink;
+    padding: 10px 0;
+    margin-bottom:10px;
+}
+}
+ul.gallery li p{
+    text-align: justify;
+}
+ul.gallery li+li h3{
+    background-color: #d4ffc0;
+}
+ul.gallery li+li+li h3{
+    background-color: #7f50ec;
+}
+ul.gallery li+li+li+li h3{
+    background-color: #e9d45b;
+}

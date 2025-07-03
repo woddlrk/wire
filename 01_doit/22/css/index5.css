@@ -1,0 +1,49 @@
+body {
+  background: var(--gn90);
+}
+
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, .5);
+  /* 부모높이 상속 */
+  height: inherit;
+}
+
+
+.wrap {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background: var(--gn20);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: var(--gn40);
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background: var(--gn20);
+}
+
+
+main .banner {
+  width: 100%;
+  height: 50vh;
+  background: var(--gn40);
+}
+
+main .content {
+  width: 100%;
+  height: 50vh;
+  background: var(--gn60);
+}

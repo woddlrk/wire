@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.wrap {
+    width: 500px;
+    margin: 0 auto;
+}
+
+header {
+    background: #555;
+
+}
+
+main {
+    background: #777;
+
+
+}
+
+footer {
+    background: #555;
+
+}
+
+nav {
+    background: #333;
+}
+
+section {
+    background: #eee;
+    color: #333;
+}
+
+aside {
+    background: #333;
+}
+
+
+/* custom */
+.c-w {
+    color: #ebc90b;
+}
+.f-l{
+    float: left;
+}
+.f-r{
+    float: right;
+}
+
+.c-f:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+/* header */
+li a{
+    background-color: chartreuse;
+    margin: 5px;
+}

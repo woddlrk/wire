@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS display 속성</title>
+  <style>
+    /* Do it! li 요소를 가로로 나란히 배치하기 */
+    /* display 주요속성(화면에서 가시성 제어)
+    block, inline, inline-block, none*/
+    nav>ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      background-color: rgba(255, 255, 0, 0.308);
+    }
+
+    li {
+      display: inline;
+      background-color: pink;
+    }
+
+    /* p밑에 div가 들어갈수 없으므로 밑의 명령은 오류 */
+    p>div {
+      display: inline;
+    }
+
+    /* 메뉴 css */
+    nav ul li {
+      a {
+        display: inline;
+      }
+      &{
+        text-align: center;
+        height: 50px;
+        width: 150px;
+        background: rgba(0, 0, 255, 0.422);
+        display: inline-block
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>div>p 가능</p>
+
+  </div>
+  <p>
+  <div>div</div>
+  <span>abcd</span>
+  </p>
+  <nav>
+    <ul>
+      <li><a href="#">메뉴 1</a></li>
+      <li><a href="#">메뉴 2</a></li>
+      <li><a href="#">메뉴 3</a></li>
+      <li><a href="#">메뉴 4</a></li>
+    </ul>
+  </nav>
+</body>
+
+</html>

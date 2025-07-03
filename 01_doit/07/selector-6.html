@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상선택자</title>
+    <style>
+        li{
+            list-style: none;
+            color: #ff0000;
+         a:link{
+            color:yellow;
+            background: black;
+        }
+        a:visited{
+            column-rule: green;
+            background: pink;
+        }
+        a:hover{
+            color: purple;
+            background: yellow;
+            
+        }
+            a:active{
+                font-size: 3em;
+                transform: rotate(15deg);
+            }
+        }
+        input:hover{
+            background: gray;
+        }
+        input:focus{
+            background: green;
+            border: spx solid blue;
+            columns: #fff;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+    <li><a href="#a">menu1</a></li>
+    <li><a href="#b">menu2</li>
+    <li><a href="#c">menu3</a></li>
+    <li><a href="#d">menu4</a></li>
+    <li><a href="#e" tabindex="-1">menu5</a></li>
+    </ul>
+    <hr> 
+    <h2 tabindex="0">동작 가상 선택자</h2>
+    <h3>로그인</h3>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>회원로그인</legend>
+            <label>아이디:<input type="text" tabindex="1"</label><br>
+            <label>비밀번호:<input type="password"</label>
+            <br>
+            <button>로그인</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* common */
+.cf::after {
+    content: '';
+}
+
+.fl {
+    float: left;
+}
+
+/* layout */
+#wrap {
+    width: 700px;
+    height: 550px;
+    margin: 0 auto;
+    background-color: chartreuse;
+
+}
+
+header {
+    width: 700px;
+    height: 100px;
+    background: red;
+}
+
+main {
+    width: 700px;
+    height: 400px;
+    background: #00ffa6;
+}
+
+footer {
+    width: 700px;
+    height: 50px;
+    background: red;
+}
+
+nav {
+    width: 100px;
+    height: 400px;
+    background: #1eff00;
+}
+
+section {
+    width: 500px;
+    height: 400px;
+    background: #a600ff;
+}
+
+aside {
+    width: 100px;
+    height: 400px;
+    background: #00a2ff;
+}
+.box{
+    width: 100px;
+    height: 100px ;
+    background: gray;
+    border-radius: 10px;
+}
+.box2{
+    width: 100px;
+    height: 200px;
+    background: #000;
+    border-radius: 10px;
+}
+div .bc1{
+    background: pink;
+}
+.box3{
+    width: 500px;
+    height: 200px;
+    background: green;
+    border-radius: 10px;
+}

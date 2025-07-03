@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+      body{
+        width: 100vw;
+        background: ivory;
+      } 
+      span{
+        display: block;
+        color: #047a04;
+      } 
+      .per{
+        width: 100%;
+        background: lightcoral;
+      }
+      .per p{
+        width: 50%;
+        background-color: green;
+      }
+      .per span{
+        background-color: lightskyblue;
+        width: 100%;
+        
+      }
+      .vw{width: 50vw;  background: lightslategray; height: 300px;}
+      .vw p{
+        width: 50vw;
+        background: mediumorchid;
+        height: 100px;
+      }
+      .vw span{
+        width: 100vw;
+        background-color: black;
+        
+      }
+    </style>
+</head>
+<body>
+    <div class="per">
+        <p>부모너비 기준:percent 단위<span>percent(%)</span></p>
+    </div>
+    <div class="vw">
+        <p>웹브라우저 너지기준:vw단위<span>viewport width (vw)</span></p>
+    </div>
+</body>
+</html>

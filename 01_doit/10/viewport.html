@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+
+        .vh {
+            font-size: 16vh;
+            /* (16*900)/100=144 */
+            /* (16*500)/100=80 */
+            height: 50vh;
+            background: pink;
+            overflow: hidden;
+            width: 50vw;
+        }
+
+        .vw {
+            font-size: 8vw;
+            width: 100vw;
+            background: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vh">
+        <p>웹브라우저 높이 기준:vh</p>
+        <p>(폰트크기*브라우저높이)/100</p>
+        <p>vh텍스트</p>
+    </div>
+    <div class="vw">
+        <p>웹브라우저 너비 기준:vw</p>
+        <p>(폰트크기*브라우저너비)/100</p>
+        <p>v텍스트</p>
+    </div>
+</body>
+
+</html>

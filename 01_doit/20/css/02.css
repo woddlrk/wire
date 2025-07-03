@@ -1,0 +1,40 @@
+@charset 'utf-8';
+/* 458p 내용 */
+.origin{
+    width: 152px;
+    height: calc(180px*4);
+    border: 1px solid;
+    margin: 30px;
+}
+.origin img{
+    width: 100%;
+}
+.rotatex,
+.rotatey,
+.rotatez,
+.rotatexyz {
+    transition: 3s all;
+}
+.rotatex:hover{
+    transform: rotateX(180deg);
+}
+.rotatey:hover{
+    transform: rotatey(180deg);
+}
+.rotatez:hover{
+    transform: rotatez(180deg);
+}
+.rotatexyz:hover{
+    /* x축 방향, y축 방향, z축 방향, 각도 */
+    transform: rotate3d(2.5, 1.2, -1.5, 55deg);
+    transform: rotateX(180deg) rotatey(180deg) rotatez(180deg) ;
+}
+.origin{
+    perspective: 600px;
+}
+/* .rotatexyz{
+    transform: perspective(60px) skew(50deg);
+}
+.rotatexyz:hover{
+    transform: skew(-50deg);
+} */

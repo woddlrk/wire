@@ -1,0 +1,56 @@
+body {
+  background: var(--gn10);
+}
+
+.df {
+  display: flex;
+}
+
+.wrap {
+  max-width: 1000px;
+  width: 100%;
+  min-height: 1000px;
+  margin: 0 auto;
+}
+
+header,
+nav,
+footer {
+  width: 100%;
+  min-height: 100px;
+  background: var(--gn20);
+}
+
+nav {
+  background: var(--gn30);
+}
+
+main {
+  width: 100%;
+  min-height: 700px;
+  background: var(--gn50);
+  gap: 10px;
+}
+
+main .side:nth-of-type(1) {
+  flex: 1 1 30%;
+  background: var(--gn60);
+}
+
+main .side:nth-of-type(2) {
+  flex: 1 1 70%;
+  background: var(--gn50);
+  display: flex;
+  flex-direction: column;
+  row-gap: 5%;
+}
+
+article {
+  flex: 1 1 50%;
+  width: 100%;
+  background: var(--gn20);
+}
+
+footer {
+  background: var(--gn40);
+}

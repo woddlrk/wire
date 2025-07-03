@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display1</title>
+    content
+    <style>
+        li {
+            list-style: none;
+            width: 100px;
+            background: darkred;
+            text-align: center;
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        /* block 요소는 브라우저 너비를 차지함 */
+        .block {
+            border: 1px solid;
+            width: 200px;
+            margin: 50px;
+        }
+
+        /* inline 요소는 컨텐츠의 너비를 차지함 */
+        .inline {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="block">block</div>
+    <div class="block">block</div>
+    <div class="block">block</div>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+    <span class="inline">inline</span>
+    <ul class="gnb">
+        <li><a href="#">Company</a><span>aaaa</span></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Community</a></li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.wrap {
+    background-color: #f0f0f0;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid pink;
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, .4);
+    background-color: blueviolet;
+    animation: rotate 2s linear backwards, scale 2s 2s linear forwards;
+}
+
+@keyframes rotate {
+    to {
+        background-color: rgb(117, 237, 121);
+        transform: translate(100px, 100px) rotate(360deg);
+    }
+
+}
+
+@keyframes scale {
+    to {
+        background-color: rgb(34, 34, 36);
+        transform: scale(1.5);
+    }
+
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*자색요소 중 5번째 */
+        /* :nth-child(5){ */
+        /* p:nth-child(5){ */
+        /* p:nth-child(5){ */
+        .box>p:nth-child(5){
+            color: red;
+        }
+        /* .box 자식요소 span 중에 1번째 */
+        .box>span:nth-of-type(1){
+            color: yellow;
+            background: black;
+            opacity: 0;
+        }
+         .box>p:nth-child(1):hover+span {
+            opacity: 1;
+         }  
+         .box>p:nth-child(3):hover+span {
+            background: red;
+            color: yellow;
+         }
+            .box>p:nth-child(3):hover+span:before {
+                content:'와우';
+                position:absolute;
+                width: 100px;
+                height: 3px;
+                background: yellowgreen;
+         }
+        span:nth-of-type(2){
+            background: navy;
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>1-p1</p>
+        <span>2-span1</span>
+        <p>3-p2</p>
+        <span>4-span2</span>
+        <p>5-p3</p>
+    </div>
+</body>
+</html>

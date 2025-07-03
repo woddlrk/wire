@@ -1,0 +1,23 @@
+@charset 'utf-8';
+/* 458p 내용 */
+.origin{
+    width: 152px;
+    height: calc(180px*4);
+    border: 1px solid;
+    margin: 30px;
+}
+.origin img{
+    width: 100%;
+}
+.rotatex,
+.rotatey,
+.rotatez,
+.rotatexyz {
+    transition: 3s all;
+}
+.rotatex{
+    transform: perspective(600px);
+}
+.rotatex:hover{
+    transform:  perspective(600px) rotateY(50deg);
+}

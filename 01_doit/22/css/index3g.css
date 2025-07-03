@@ -1,0 +1,45 @@
+body {
+  background: var(--gn10);
+}
+
+.wrap {
+  width: min(1000px, 100%);
+  /* 주어진 두개의 인수중 작은 쪽을 적용, 최대값지정 */
+  /*브라우저 너비가 1240px 일때 .wrap 의 너비는 1000px  */
+  /*브라우저 너비가 900px 일때 .wrap 의 너비는 900px  */
+  margin: 0 auto;
+  background: var(--gn60);
+  min-height: 900px;
+}
+
+.df {
+  display: grid;
+  grid-template-areas:
+    's h h h'
+    's c c c'
+    's f f f'
+  ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, minmax(300px, auto));
+}
+
+.side {
+  grid-area: s;
+  background: var(--gn40);
+}
+
+header {
+  grid-area: h;
+  background: var(--gn20);
+}
+
+.contents {
+  grid-area: c;
+  background: var(--gn30);
+}
+
+footer {
+  grid-area: f;
+  background: var(--gn60);
+}

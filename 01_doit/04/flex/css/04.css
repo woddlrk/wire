@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    flex-direction: row;
+}
+
+#opt1 {
+    /* 교차축 시작점 배치 */
+    align-items: flex-start;
+}
+
+#opt2 {
+    /* 교차축 기준 끝점 배치 */
+   align-items: flex-end;
+}
+
+#opt3 {
+    /* 주축 중앙 배치 */
+    justify-content: center;
+    align-items: center;
+}
+/* scss */
+#opt4 {
+    & {
+
+    /* 시작점과 끝점 배치후 중간은 같은 간격배치 */
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.box {
+    width: auto;
+    &:not(:first-child){
+    font-size: 10px;
+    font-weight: bold;
+    }
+    &:nth-child(3){
+        font-size: 50px;
+    }
+}
+}
+
+#opt5 {
+    /* 중첩영역 더함 */
+    justify-content: space-around;
+    /* 중첩영역 무시(병합) */
+    align-items: stretch;
+}

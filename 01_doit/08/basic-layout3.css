@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.wrap {
+    width: 500px;
+    margin: 0 auto;
+}
+header{
+    background: #555;
+}
+main{
+    background: #777;
+}
+nav{
+    background: #333;
+}
+section{
+    background: #fff;
+}
+aside{
+    background: #333;
+}
+fpp

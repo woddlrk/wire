@@ -1,0 +1,44 @@
+.box{
+    width: 1px;
+    height: 1px;
+    background-color: transparent;/*  transparent=투명 */
+    /* border-top: 5px solid yellow; */
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid green;
+    border-left: 5px solid transparent;
+}
+.border_tip{
+    width: 400px;
+    font:12px "맑은 고딕", Arial, sans-serif;
+    text-align: justify;
+    background-color: skyblue;
+    position: relative;
+    left: 50%;
+    margin-left: -200px;
+    padding: 8px;
+    top: 100px;
+    box-sizing: border-box;
+}
+.border_tip:before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    border-bottom: 10px solid skyblue;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    left: 50%;
+    margin-left: -10px;
+}
+.border_tip::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-top: 10px solid skyblue;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+
+}

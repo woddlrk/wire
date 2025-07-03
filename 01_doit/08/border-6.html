@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>박스모델</title>
+	<style>
+    /* Do it! 이미지를 원형으로 표시하기 */
+	img:{
+		display: none;
+		border-radius: 50%;
+		transition: all 0.5s;
+		
+	}
+	h1:hover~img {
+		border-radius: 50%;
+		transition: all 0.5s;
+	}
+	</style>
+</head>
+<body>
+	<h1>hover</h1>
+	<img src="images/photo.jpg">
+	<img src="images/photo.jpg">
+</body>
+</html>

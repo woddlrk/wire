@@ -1,0 +1,12 @@
+.container{
+    width: 450px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+#box1{
+    align-self: flex-start;
+}
+#box3{
+    align-self: stretch;
+}
