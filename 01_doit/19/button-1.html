@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,18 +13,33 @@
       justify-content: center;
       height: 100vh;
     }
+
     div {
       margin-bottom: 20px;
     }
+
     button {
       padding: 10px 20px;
       border: 1px solid #ccc;
       border-radius: 5px;
       cursor: pointer;
     }
+
     /* Do it! 필요한 클래스 스타일 정의하기 */
+    .enabled {
+      color: #fff;
+      background-color: blue;
+      border: blue 1px solid;
+    }
+
+    .disabled {
+      color: #ccc;
+      background-color: #c6c6c6;
+      border: #c6c6c6 1px solid;
+    }
   </style>
 </head>
+
 <body>
   <div>
     <label>
@@ -32,10 +48,29 @@
   </div>
   <div>
     <button id="proceed" disabled>다음으로 진행</button>
-  </div>  
+  </div>
 
   <script>
     // Do it! 체크 박스에 체크하면 버튼 활성화하기
+    const check = document.querySelector('#agree');
+    const proceedBtn = document.querySelector('#proceed');
+    // 이벤트핸들러함수로 ()=> 함수 사용시 this는 윈도우객체를 반환
+    // function 키워드 함수는 이벤트 발생 객체 자신을 반환
+    check.addEventListener('change', function () {
+      if (this.checked) {
+        proceedBtn.classList.remove('disabled');
+        proceedBtn.classList.add('enabled');
+        proceedBtn.disabled = false;
+      } else {
+        proceedBtn.classList.remove('enabled');
+        proceedBtn.classList.add('disabled');
+        proceedBtn.disabled = true;
+      }
+    
+      
+
+    })
   </script>
 </body>
+
 </html>

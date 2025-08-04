@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/02.css">
+    <link rel="stylesheet" href="css/04.css">
+</head>
+<body>
+    <!-- .swiper.vertical>.swiper-wrapper>(.swiper-slide)*3+section.swiper.section_all.swiper-slide -->
+   <div class="swiper vertical">
+    <div class="swiper-wrapper">
+        <div class="a swiper-slide">1</div>
+        <div class="a swiper-slide">2</div>
+        <div class="a swiper-slide">3</div>
+        <section class="swiper section_all swiper-slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" data-hash="slide1">slide1</div>
+                <div class="swiper-slide" data-hash="slide2">slide2</div>
+                <div class="swiper-slide" data-hash="slide3">slide3</div>
+                <div class="swiper-slide" data-hash="slide4">slide4</div>
+                <div class="swiper-slide" data-hash="slide5">slide5</div>
+                <div class="swiper-slide" data-hash="slide6">slide6</div>
+            </div>
+             <div class="swiper-pagination"></div>
+
+        </section>
+        <div class="a swiper-slide">4</div>
+    </div>  <!-- //.swiper-wrapper  -->
+    <div class="swiper-pagination"></div>
+   </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script/04.js"></script>
+
+</body>
+</html>

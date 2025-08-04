@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marquee</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.1/jquery.marquee.min.js"></script>
+  <script>
+    $(()=> {
+        $('.marquee').marquee({
+            speed: 500,
+            gap:50,
+            duplicated: true,
+            pauseOnHover:true
+        })
+    })
+  </script>
+  <style>
+    .marquee{
+        transform: rotate(45deg);
+        color:white;
+        background: black;
+        width: 500px;
+        overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="marquee"> install jquery.marquee --save
+CDN: jsdelivr.com"</div>
+</body>
+</html>

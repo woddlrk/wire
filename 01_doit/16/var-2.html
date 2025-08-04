@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>prompt</title>
 </head>
-<body>	
+
+<body>
 	<script>
 		// Do it! 상수 사용해서 원 넓이 구하기
-		
+		// const 키워드로 변수를 초기화
+		const PI = 3.14;
+		let radius;
+		window.alert(radius);
+		// const는 값의 재할당이 불가하므로 오류발생
+		//radius 값의 재할당
+		 radius = window.prompt('반지름을 입력하세요','50');
+		window.alert(radius);
+		// 원의 넓이 계산: 반지름의 제곱 * 3.14
+		let area = PI * radius * radius;
+		document.write(area)
+		PI = 55555;
+	</script>
+	<script>
+		var x;
+		console.log(x);
+		x = 10;
+		console.log(x);
+		var x = 50;
+		console.log(x);
 	</script>
 </body>
+
 </html>

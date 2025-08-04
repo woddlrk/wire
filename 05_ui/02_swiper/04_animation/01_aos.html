@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .item{
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            background: #ccc;
+            font-size: 3em;
+            color: white;
+            text-align: center;
+            line-height:  300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item" data-aos="fade-up" data-aos-delay="1000">1</div>
+    <div class="item" data-aos="fade-down" >2</div>
+    <div class="item" data-aos="fade-left">3</div>
+    <div class="item" data-aos="zoom-in">4</div>
+    <div class="item" data-aos="flip-left">5</div>
+    <div class="item" data-aos="slide-up" data-aos-easing="ease-in-quad" data-aos-duration="2000">6</div>
+    <div class="item" data-aos="slide-left" data-aos-duration="500" data-aos-once="false">7</div>
+    <div class="item" data-aos="fade-up">8</div>
+    <div class="item" data-aos="fade-up">9</div>
+    <div class="item" data-aos="fade-up">10</div>
+    <div class="item" data-aos="fade-up">11</div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:500,
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>

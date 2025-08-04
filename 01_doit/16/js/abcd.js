@@ -1,0 +1,21 @@
+let season = [];
+console.log(typeof season);
+season = ['봄'];
+console.log(season);
+season = ['여름'];
+console.log(season);
+season = ['가을'];
+console.log(season);
+season = ['겨울'];
+console.log(season);
+season =['봄'];
+console.log(season);
+season.push('여름');
+console.log(season);
+season.push('가을');
+console.log(season);
+season.push('겨울');
+console.log(season);
+season.pop()
+console.log(season);
+console.log(season[0]);

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            animation: clip 5s infinite alternate;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        }
+
+        @keyframes clip {
+            0% {
+                clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            }
+
+            100% {
+                clip-path: polygon(50% 94%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+            }
+        }
+
+
+        @keyframes clip1 {
+            0% {
+                clip-path: path("M5 441C22 501 154 421 148 453.5C145.333 453.5 132.7 465.5 103.5 513.5C67 573.5 123.5 569 203.5 513.5C283.5 458 303.5 540 283.5 587.5C263.5 635 463.5 609.5 586.5 587.5C709.5 565.5 434 472 374 453.5C314 435 517 402.5 617 315C717 227.5 651 192.5 522 224.5C393 256.5 387.5 156 358.5 39.5C329.5 -77 109 106 114 149C119 192 208 246 114 249C20 252 -12 381 5 441Z");
+
+
+            }
+
+            100% {
+                clip-path: path("M47 251C64 311 87 349 81 381.5C78.3333 381.5 65.7 393.5 36.5 441.5C0 501.5 81 454 161 398.5C241 343 219.5 381.5 199.5 429C179.5 476.5 215 451 338 429C461 407 367 400 307 381.5C247 363 307 306 407 218.5C507 131 425.5 197 296.5 229C167.5 261 265.5 167.5 236.5 50.9999C207.5 -65.5001 173 53.9999 178 96.9999C183 140 141 174 47 177C-47 180 30 191 47 251Z");
+            }
+        }
+
+        .shape {
+            width: 800px;
+            height: 800px;
+            background-color: orange;
+            animation: clip1 5s infinite alternate;
+
+        }
+
+        .box {
+            clip-path: circle(75%);
+            background: coral;
+            width: 200px;
+            height: 200px;
+            transition: clip-path 1s;
+        }
+
+        .box:hover {
+            clip-path: circle(25%);
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://placedog.net/500" alt="">
+    <div class="shape"></div>
+    <div class="box"></div>
+</body>
+
+</html>

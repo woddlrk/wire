@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+    <p>첫번째 단락</p>
+</div>
+<script>
+    const container = document.getElementById("container");
+    console.log(container);
+    /* innerHTML : element 내에 html 요소를 추가 */
+    container.innerHTML += '<p>두번째 단락</p>';
+    /* += : 가산후 재할당 */
+    
+</script>
+</body>
+</html>

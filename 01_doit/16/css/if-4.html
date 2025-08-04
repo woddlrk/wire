@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-else-ifs</title>
+    <style>
+        .score {
+            font-size: 3em;
+            color: white;
+            background-color: blue;
+        }
+
+        .form_wrap {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>if-else-if 학점 계산기 만들기</h1>
+    <div class="score"></div>
+    <div class="form_wrap">
+        <label>수학점수:</label><input type="text" id="math">
+        <label>국어점수:</label><input type="text" id="kor">
+        <label>미술점수:</label><input type="text" id="art">
+        <label>영어점수:</label><input type="text" id="eng">
+        <button>전송</button>
+    </div>
+    <script>
+        const score = document.querySelector('.score');
+
+
+
+        const btn = document.querySelector('button');
+        btn.addEventListener('click', function () {
+            let math = parseInt(document.querySelector('#math').value);
+            let kor = parseInt(document.querySelector('#kor').value);
+            let art = parseInt(document.querySelector('#art').value);
+            let eng = parseInt(document.querySelector('#eng').value);
+
+            let sum = math + kor + art + eng;
+            let aver = sum / 4;
+            // 100~90
+            if (aver >= 90) { score.innerHTML = "A학점 입니다." }
+            else if(aver >= 80){score.innerHTML = "B학점 입니다."}
+            else if(aver >= 70){score.innerHTML = "C학점 입니다."}
+            else if(aver >= 60){score.innerHTML = "D학점 입니다."}
+            else {score.innerHTML = "아...너를 어쩌면 좋으니."}
+        })
+    </script>
+</body>
+
+</html>

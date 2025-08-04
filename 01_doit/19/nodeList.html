@@ -13,5 +13,29 @@
 		<li>CSS</li>
 		<li>Javascript</li>
 	</ul>
+	<script>
+		/* 자바스크립트에서 추가한 요소 (동적요소, dynamic element) 
+		   1.  빈 요소를 생성 - createElement()
+		   2. 1에 넣을 콘텐츠 생성 - createText()
+		   3. 2를 1에 추가
+		   3. 1을 추가할 상위 요소를 선택하고 추가 - appendChild()
+		*/		
+		const newLi = document.createElement("li");
+		const textCon = document.createTextNode("Typescript")
+		newLi.appendChild(textCon)
+		document.querySelector('ul').appendChild(newLi)
+		/* 
+		1. newImg 변수에 img 태그를 생성
+		2. newImg 변수에 src 속성 할당(imgaes/books.png)
+		3. newImg를 하위노드로 추가
+		 */
+		const newImg = document.createElement("img");
+		newImg.src = `images/books.png`;
+		document.body.appendChild(newImg);
+		newImg.onclick = function (){
+			this.src=`images/coffee-gray.jpg`
+		}
+	</script>
+
 </body>
 </html>

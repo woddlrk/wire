@@ -16,6 +16,23 @@
 	</style>
 </head>
 <body>
-
+<script>
+  console.log(calcSum(10));
+  
+  //let n;
+  function calcSum(n){
+  let sum=0;
+  for(let i = 1; i <= n; i++){
+    //sum = sum + i;
+    sum += i;
+  }
+  document.write(`1부터 ${n}까지 더하면 ${sum}`)
+  }
+  //calcSum(2)
+  let userNum=prompt('얼마까지 더할까요?')
+  if(userNum !== null){
+    calcSum(parseInt(userNum));
+  }
+</script>
 </body>
 </html>

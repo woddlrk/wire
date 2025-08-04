@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전위연산자, 후위연산자</title>
+</head>
+
+<body>
+    <h1></h1>
+    <button id="btn1">++</button>
+    <script>
+        const num = document.querySelector('h1');
+        let count = 0;
+        num.textContent = count;
+        const button = document.querySelector('#btn1');
+        button.addEventListener('click', function () {
+            count++; //1씩 증가
+            num.textContent = count;
+            
+        })
+
+    </script>
+
+</body>
+
+</html>

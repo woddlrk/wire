@@ -25,7 +25,11 @@
 
 	<script>
     // Do it! DOM을 사용해 이벤트 처리하기 
-
+    const cat = document.querySelector('#cat');
+    cat.onclick = changePic;
+    function changePic(){
+      cat.src = 'images/kitty-2.png'
+    }
 	</script>
 </body>
 </html>

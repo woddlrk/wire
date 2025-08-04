@@ -28,7 +28,14 @@
 
 	<script>
 		// Do it! event 객체 사용하기
-
+		// e.pageX, e.pageY : 현재 문서를 기준으로 이벤트가 발생한 좌표반환
+		const container=document.querySelector('.container');
+		container.onclick = (e)=> {
+			container.innerHTML += `이벤트 발생 위치 (현재 문서를 기준)- pageX / Y:${e.pageX}, ${e.pageY} <br>`
+			container.innerHTML += `이벤트 발생 위치(이밴트 발생한 위치)- clientX / Y:${e.clientX}, ${e.clientY} <br>`
+			container.innerHTML += `이벤트 발생 위치(현재 화면을 기준 )- clientX / Y:${e.screenX}, ${e.screenY} <br>`
+			
+		}
 	</script>
 </body>
 </html>

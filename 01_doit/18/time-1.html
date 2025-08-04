@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>What time is it?</title>
-	<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What time is it?</title>
+  <style>
     body {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
-			font-size: 1.2em;
+      font-size: 1.2em;
     }
-	</style>
+  </style>
 </head>
+
 <body>
-	<script>
+  <script>
     // Do it! Date 객체를 사용하여 현재 날짜와 시간을 표시하기
-
-	</script>
+    let now = new Date();
+    document.write(`현재 시간은${now}`);
+  </script>
 </body>
-</html>
 
+</html>

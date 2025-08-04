@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--탭: 선택된 요소의 콘텐츠만 표시 (나머지 감춤) -->
+    <ul>
+        <li class="b1">b1</li>
+        <li class="b2">b2</li>
+        <li class="b3">b3</li>
+    </ul>
+    <div>
+        <h3 class="h1">h1h1h1h1h1h1h1h1</h3>
+        <h3 class="h2">h2h2h2h2h2h2h2h2</h3>
+        <h3 class="h3">h3h3h3h3h3h3h3h3</h3>
+    </div>
+    <script>
+        //상수변수 h1을 선언하고 h1클래스 요소로 초기화함
+        const h1 = document.querySelector('.h1');
+        const h2 = document.querySelector('.h2');
+        const h3 = document.querySelector('.h3');
+        const b1 = document.querySelector('.b1');
+        const b2 = document.querySelector('.b2');
+        const b3 = document.querySelector('.b3');
+        h2.style.display = 'none';
+        h3.style.display = 'none';
+        b1.onclick = function () {
+            h1.style.display = 'block';
+            h2.style.display = 'none';
+            h3.style.display = 'none';
+            b1.style.color = 'red';
+            b2.style.color = 'black';
+            b3.style.color = 'black';
+            h1.style.color = 'red';
+        }
+        b2.onclick = function () {
+            h1.style.display = 'none';
+            h2.style.display = 'block';
+            h3.style.display = 'none';
+            b1.style.color = 'black';
+            b2.style.color = 'red';
+            b3.style.color = 'black';
+            h2.style.color = 'red';
+
+        }
+        b3.onclick = function () {
+            h1.style.display = 'none';
+            h2.style.display = 'none';
+            h3.style.display = 'block';
+            b1.style.color = 'black';
+            b2.style.color = 'black';
+            b3.style.color = 'red';
+            h3.style.color = 'red';
+
+
+        }
+    </script>
+</body>
+
+</html>

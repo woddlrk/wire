@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+    /* 성별저장 변수 */
+    let gender=prompt('성별을 입력하세요','여성이나 남성');
+    /* 나이저장 변수 */
+    let age=prompt('나이를 입력하세요','두자리 숫자로 입력');
+    console.log(gender, age);
+
+    /* 20대: 20~29*/
+    let min = age > 19;
+    let max = age < 30;
+    let check = min && max
+    let check2 = gender === '여성'
+    let result = check && check2;
+
+    document.write(`<h1>${result}</h1>`)
+    let output = (age > 19) && (age < 30) && (gender === '여성');
+    
+  </script>  
+</body>
+</html>

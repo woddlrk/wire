@@ -38,7 +38,15 @@
 
   <script>
     // Do it! DOM을 사용해 텍스트에 접근하기
-
+    /* 1. 요소.innerText : display:none x
+       2. 요소.innerHTML : html요소 O
+       3. 요소.innerContent : display:none O
+     */
+    const detail = document.querySelector('#detail>ul');
+    console.log(detail.innerText);
+    console.log(detail.innerHTML);
+    console.log(detail.innerContent);
+    
   </script>
 </body>
 </html>

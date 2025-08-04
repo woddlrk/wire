@@ -9,7 +9,25 @@
   <h1>자리 배치도</h1>
   <script>    
     // Do it! 자리 배치도 만들기 - 몇 줄이 필요할까? 
+    /* 변수로 저장할 값: 총인원(memNum), 한줄에 앉을 사람수(colNum)
+       필요한 줄의 갯수(rowNum)= 총인원 / 한줄에 앉을 사람수
+     */
+    //1.변수 memNum 을 선언하고 사용자로 부터 총 입장객수를 입력 받으세요
+    //2.변수 colNum 을 선언하고 사용자로 부터 한줄에 앉을 인원수를 입력 받으세요
 
+    let memNum = parseInt(prompt('총 입장객수'));
+    let colNum = parseInt(prompt('한줄에 앉을 인원수'));
+    //3.필요한 줄의 갯수
+    let rowNum;
+    //3-1. 나눈 나머지가 0일 경우
+    if(memNum % colNum === 0){
+      rowNum = memNum / colNum;
+    }
+    //3-2. 3-1이 아닌경우
+    else{
+      rowNum= parseInt(memNum / colNum) + 1 
+    }
+    document.wirte(`모두 ${rowNum} 줄이 필요합니다.`)
   </script>
 </body>
 </html>

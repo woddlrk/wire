@@ -8,7 +8,16 @@
 <body>
   <script>
     //  Do it! OR 연산자를 사용해 조건 체크하기 
-
+    let num1=parseInt(prompt('50미만의 숫자를 입력'))
+    let num2=parseInt(prompt('50미만의 숫자를 입력'))
+    let check1=num1 < 50; //50초과시 t
+    let check2=num2 < 50; //50초가시 t
+    
+    // if(check1 || check2)
+    if(num1 < 50 || num2 < 50)
+    alert('두 숫자중 최소 하나는 50미만 이군요')
+    else
+    alert('두 숫자 모드 50초과 군요')
   </script>
 </body>
 </html>

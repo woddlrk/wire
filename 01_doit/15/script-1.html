@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>글자색 바꾸기</title>
 	<style>
-		body { text-align:center; }
-		h1 { color:blue; }
+		body {
+			text-align: center;
+		}
+
+		h1 {
+			color: blue;
+		}
 	</style>
 </head>
+
 <body>
 	<h1 id="heading">자바스크립트</h1>
 	<p id="text">위 텍스트를 클릭해 보세요</p>
-  
-	<!-- Do it! 내부 스크립트 코드 작성하기 -->
 
+	<!-- Do it! 내부 스크립트 코드 작성하기 -->
+	<script>
+		document.getElementById('heading').onclick = function () {
+			// alert('짠짠')
+			document.getElementById('heading').style.color = 'red';
+		}
+	</script>
+	<script>
+		//#text 클릭시 글씨색 파란색으로 변경
+		document.getElementById('text').onclick = function () {
+		document.getElementById('text').style.color = 'blue';
+		}
+	</script>
 </body>
+
 </html>

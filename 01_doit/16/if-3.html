@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>조건문</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>조건문</title>
 </head>
+
 <body>
-    <script>
-      // 조건 연산자를 사용해 사용자가 입력한 숫자가 3의 배수인지 판별하기 
- 
-    </script>
+  <script>
+    // 조건 연산자를 사용해 사용자가 입력한 숫자가 3의 배수인지 판별하기 
+    let userNum = parseInt(prompt('숫자를 입력하세요'));
+    if (userNum !== null) {
+      // 조건 ? true일때 실행 : false 실행
+      userNum % 3 === 0 ? alert('3의 배수야') : alert('3의 배수 아니야')
+    };
+  </script>
+  <!-- 
+     자바스크립트 개발 목적별로 쉽게 사용하도록 개발된 도구 
+     개발자의 자유도에 따라 
+     라이브러리, 프레임워크 로 구분됨
+     제이쿼리: html 요소를 쉽게 조작할 수 있게 개발된 라이브러리
+     (애니메이션 특화)
+     - 리엑트, 뷰, 스벨트, 앵귤러(같은계열):
+       JS 기반으로 웹을 제작
+       반복적인 UI 개발에 특화
+       리엑트 네이티브(앱개발)
+       -넥스트 (리액트 기반 프레임워크): 풀스택(백엔드, 프론트엔드)
+    -->
 </body>
+
 </html>

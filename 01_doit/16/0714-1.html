@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>평균 점수 계산 프로그램</title>
+</head>
+<body>
+     
+  <script>
+//  사용자로 부터 국어점수를 입력받아 x에 할당
+
+    const x =Number(prompt('국어점수를 입력하세요'));  /* 변수 x를 75 값으로 초기화 */
+    console.log(typeof x);  /* string */
+
+
+    /* 사용자로 부터 수학점수를 입력받아 Y에 할당 */
+    const y =  Number(prompt('수학점수를 입력하세요'));  /* 변수 y룰 87 값으로 초기화 */
+    /* 변수z에 사용자의 영어점수를 입력받아 총점과 평균계산 */
+    const z = Number(prompt('영어점수를 입력하세요'));
+    const add = x + y + z; /* 총점 */
+
+    document.write(`국어점수: ${x}, 수학점수: ${y}, 영어점수: ${z}, 총점: ${add}, 평균점수: ${add / 3}`)
+  </script>  
+</body>
+</html>

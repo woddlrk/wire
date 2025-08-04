@@ -9,16 +9,38 @@
   <body>
     <div class="row">
       <ul>
-        <li><img src="images/tree-1-small.jpg" data-src="images/tree-1.jpg" class="pic"></li>
-        <li><img src="images/tree-2-small.jpg" data-src="images/tree-2.jpg" class="pic"></li>
-        <li><img src="images/tree-3-small.jpg" data-src="images/tree-3.jpg" class="pic"></li> 
-        <li><img src="images/tree-4-small.jpg" data-src="images/tree-4.jpg" class="pic"></li>
-        <li><img src="images/tree-5-small.jpg" data-src="images/tree-5.jpg" class="pic"></li>
-        <li><img src="images/tree-6-small.jpg" data-src="images/tree-6.jpg" class="pic"></li>          
+        <li><img src="images/tree-1-thumb.jpg" data-src="images/tree-1.jpg" class="pic"></li>
+        <li><img src="images/tree-2-thumb.jpg" data-src="images/tree-2.jpg" class="pic"></li>
+        <li><img src="images/tree-3-thumb.jpg" data-src="images/tree-3.jpg" class="pic"></li> 
+        <li><img src="images/tree-4-thumb.jpg" data-src="images/tree-4.jpg" class="pic"></li>
+        <li><img src="images/tree-5-thumb.jpg" data-src="images/tree-5.jpg" class="pic"></li>
+        <li><img src="images/tree-6-thumb.jpg" data-src="images/tree-6.jpg" class="pic"></li>          
       </ul>    
     </div>
     <div id="lightbox">
 			<img src="images/tree-1.jpg" alt="" id="lightboxImage">			
     </div>
+    <script>
+      const pics =document.querySelectorAll('.pic');
+      const lightbox = document.querySelector('#lightbox');
+      const lightboxImg = lightbox.querySelector('#lightboxImage');
+      pics.forEach((el) => {
+        el.addEventListener('click', showLightbox)
+      })
+      function showLightbox(){
+        //bigLocation 변수에 클릭한 요소의  data-src 속성값을 할당
+        let bigLocation=this.getAttribute('data-src');
+        //콘솔 로그에 변수 bigLocation 의 값을 출력
+        console.log(bigLocation);
+        //변수 lightboxImg의 src 속성을 bigLocation 로 변경 
+        lightboxImg.src = bigLocation;
+        //변수 lightbox 의 css display 속성을 block로 변경 (화면에 표시됨)
+        lightbox.style.display = 'block';
+        lightbox.onclick = ()=>{
+          lightbox.style.display = 'none';
+        }
+        
+      }
+    </script>
   </body>
 </html>

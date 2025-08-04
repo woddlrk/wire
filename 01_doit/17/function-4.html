@@ -23,7 +23,11 @@
 <body>
 	<script>		
     // Do it! 즉시 실행 함수 사용하기
-
+    /* (function(){}()) */
+    (function(){
+      let userName=prompt('이름을 입력하세요.')
+      document.write(`${userName}님 환영합니다.`)
+    }())
   </script>	
 </body>
 </html>

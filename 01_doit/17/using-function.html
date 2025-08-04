@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>함수</title>
 </head>
-<body>
-	<script>		
-		// Do it! 함수를 사용하여 2와 3 더하기
 
-	</script>	
+<body>
+	<script>
+		// Do it! 함수를 사용하여 2와 3 더하기
+		/* function 함수명(){ 할일(실행문)} */
+		/* 함수의 선언 */
+		function add(x, y) {
+			//	let x = 2;
+			//	let y = 3;
+			let sum = x + y;
+			alert(`결과값: ${sum}`)
+		}
+		/* 함수의 호출 */
+		add(5, 10)
+		add(15, 80)
+
+		/* scope: 값, 식의 유효범위 */
+		print(uName)
+		var uName = prompt('회원명을 입력하세요');
+		/* 선언적 함수의 스코프는 최상위로 끌어올려짐
+		   해당 스크립트문 전체에서 평가(실행)됨 */
+		function print(a) {
+			let time = new Date();
+			document.write(`<h1>${a}님, 안녕하세요.<h1>`)
+			document.write(`${a}님, 접속하신 시간은 ${time}입니다.`)
+		}
+	</script>
 </body>
+
 </html>

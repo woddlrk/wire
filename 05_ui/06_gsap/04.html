@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        .one {
+            background: red;
+        }
+
+        .two {
+            background: green;
+        }
+
+        .three {
+            background: blue;
+        }
+
+        .four {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <button>click</button>
+    <h1>TITLE</h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script>
+        // defaults 하위 트윈과 타임라인에 값을 상속함
+        let tl = gsap.timeline({ defaults: { duration: 1, repeat: 0}})
+        tl.from('.one', {y: -100, opacity: 0})
+        // -=0.5 타임라인 종료 0.5초 전
+        tl.from('.two', {y: -100, opacity: 0}, '-=0.5')
+        // +=1 타임라인 종료 1초 후
+        tl.from('.three', {y: -100, opacity: 0, scale: 0}, '+=1')
+        tl.to('.four', {y: -100, backgroundColor: 'yellow', borderRadius:"50%"}, '3')
+        // 이전 트윈시작시
+        tl.to('h1', { x: 500, color: "purple", fontSize:"100px",}, "<")
+        // 이전 트인종료시
+        tl.to('button', { scale:2, color: "purple", fontSize:"100px", transformOriginx:"0"}, ">")
+        
+
+
+        document.querySelector('button').addEventListener('click', (e)=> {
+            e.preventDefault();
+            tl.reversed()? tl.play() : tl.reverse();
+        });
+    </script>
+</body>
+
+</html>

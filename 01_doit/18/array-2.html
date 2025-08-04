@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Array 객체의 메서드</title>
 	<style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+		body {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
 			font-size: 1.2em;
-    }
+		}
+
 		hr {
-			width: 100%;			
+			width: 100%;
 		}
 	</style>
 </head>
+
 <body>
 	<div class="container">
 		<script>
 			// Do it! Array 객체의 다양한 메서드 연습하기
-	
+			// Array()
 			let nums = [1, 2, 3];
 			let chars = ["a", "b", "c", "d"];
-	
+
 			// 두 개의 배열 합치기
-	
-	
+			let numsChars = nums.concat(chars);
+			document.write(numsChars)
+			let charsNums = chars.concat(nums);
+			document.write("<hr>" + charsNums)
+
 			// 배열 안의 요소 합치기
-	
-	
+			let string1 = nums.join();
+			document.write(`<hr> 구분자 없이: ${string1}`)
+			console.log(nums);//["1","2","3"]
+			console.log(string1);//["1,2,3"]
+			let string2 = chars.join('/');
+			document.write(`<hr> 구분자 지정: ${string2}`)
+
+
 			// 요소 추가 - 새로운 length 값 반환
-	
-	
+			let ret1 = nums.push(4, 5);
+			// push는 배열의 요소 뒤에 지정된 요소 추가
+			// 변수에 할당후 출력하면 변경된 배열의 길이가 반환됨
+			document.write(`<hr> length:${ret1} // 배열: ${nums}`)
+			// unshift 는 배열의 요소 앞에 지정된 요소 추가
+			let ret2 = nums.unshift('0');
+			document.write(`<hr> length:${ret2} // 배열: ${nums}`)
+
+
 			// 요소 추출 - 꺼낸 요소 반환
-	
+			let popped1 = chars.pop();//마지막 요소 추출
+			document.write(`<hr>꺼낸 요소:${popped1}// 배열 ${chars}`);
+			let popped2 = chars.shift();
+			document.write(`<hr>꺼낸 요소:${popped2}// 배열 ${chars}`);
+
 		</script>
 	</div>
 </body>
+
 </html>

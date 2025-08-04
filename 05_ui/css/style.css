@@ -1,0 +1,49 @@
+*{box-sizing: border-box;
+ -webkit-font-smoothing: antialised;   
+ /*크롬에서 폰트의 앨리어스 현상 방지 */
+ -moz-osx-font-smoothing: grayscale;
+ /* 모질라 폰트의 앨리어스 현상 방지 */
+}
+.tab_wrapper{
+    width: 960px;
+    margin: auto;
+}
+
+.tab_menu{
+    padding-left: 0;
+
+}
+.tab_menu li{
+    display: inline-block;
+    list-style: none;
+    background-color: #ebebeb;
+    margin-right: 10px;
+}
+.tab_menu li a{
+    color: #999;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 27px;
+    text-decoration: none;
+    padding: 0, 20px;
+}
+.tab_menu li a.active{
+    background-color: #000;
+    color: #fff;
+}
+.tab_content{
+    position: relative;
+    min-height: 300px;
+}
+.tab_content>div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ccc url(http://qwerew.cafe24.com/example/javascript/chicken.png) no-repeat 100px top/40px;
+    padding: 1em;
+    display: none;
+}
+ 
+.tab_content>div.active{
+    display: block;
+}

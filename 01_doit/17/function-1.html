@@ -18,7 +18,24 @@
 <body>
 	<script>		
 		// Do it! 매개변수를 사용한 함수 선언하기 및 호출하기
-
+	function addNum(){
+		let a = 10;
+		let b = 20;
+		let sum = a + b;
+		//return 함수의 코드블럭 밖으로 값을 반환함
+		return sum; 
+	}
+	document.write(`addNum(): ${addNum()}`)
 	</script>	
+	<hr>
+	<script>
+		//매개변수를 사용해보기
+		function addNumber(x,y){
+			return x + y;
+		}
+		document.write(`addNumber():${addNumber(50,70)}`)
+		document.write(`<br>addNumber():${addNumber(5,'월')}`)
+	</script>
+
 </body>
 </html>

@@ -18,7 +18,13 @@
 <body>
 	<script>		
     // Do it! 매개변수 기본값 사용하기
-
+    function multiple(a,b = 1,c = 30){
+      return a * b * c;
+    }
+    console.log(multiple(10, 20));
+    console.log(multiple(10, 20, 5));
+    console.log(multiple(5));
+     
 	</script>	
 </body>
 </html>

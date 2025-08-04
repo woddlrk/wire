@@ -18,5 +18,37 @@
     <hr>  
     <ul id="itemList"></ul>  
   </div>
+  <script>
+    //리스트 삽입 함수
+    function newList() {
+     const newItem=document.querySelector('#subject');
+    // console.log(newItem.value);
+    // console.log(newItem.placeholder);
+    // newItem.placeholder="특수문자를 포함한 8자리 영문으로"
+    const li= document.createElement('li');
+    const text=document.createTextNode(newItem.value);
+    li.appendChild(text);
+    const ul = document.querySelector('#itemList')    ;
+    //ul.appendChild(li);
+    ul.insertBefore(li, ul.childNodes[0])
+    newItem.value = '';}
+    //추가버튼 클릭시 리스트 삽입
+    document.querySelector('button').addEventListener('click',
+      function (e){
+        e.preventDefault();//기본이벤트 막기
+        newList()
+      }
+    )
+    //클릭시 삭제하기
+    const uls = document.querySelector('#itemList');
+    uls.addEventListener('click',function(e) {
+      //console.log(e.target);
+      if(e.target.tagName === "LI"){ //targNam 은 태그를 대문자로 작성
+      if(confirm("삭제하시겠습니까?"))   {
+        e.target.remove();
+      }
+      }
+    })
+  </script>
 </body>
 </html>

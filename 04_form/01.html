@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 폼디자인</title>
+    <style>
+        select {
+            /* 기본 외형 감추기 */
+            -webkit-appearnace: none;
+            -moz-appearnace: none;
+            appearance: none;
+            /* 브라우저 호환성혹인: caniuse.com */
+            background: url(arrow.svg) no-repeat 93% 50%;
+            background-size: 10%;
+            width: 200px;
+            padding: 0.8em .5em;
+            border: 1px solid#999;
+            border-radius: 10px;
+        }
+    </style>
+    <style>
+        .checkbox {
+            margin: 2em 0;
+        }
+
+        .checkbox input.check1 {
+            font-size: 1em;
+            width: 10em;
+            height: 10em;
+            vertical-align: middle;
+        }
+
+        .checkbox input.check1+label {
+            font-size: 1.125em;
+            vertical-align: middle;
+        }
+
+        /* ---------------------- */
+        /* desing checkbox */
+        label[for='check2'] {
+            position: relative;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        .check2 {
+            display: none;
+        }
+
+        .check2+label[for='check2']::before {
+            content: '';
+            width: 2.25em;
+            height: 2.25em;
+            display: inline-block;
+            background-color: #a00;
+            border: 2px solid #a66;
+            border-radius: 50%;
+        }
+
+        .check2+label[for='check2']::after {
+            position: absolute;
+            content: '🍕';
+            left: 9px;
+            font-size: 1.5em;
+            transition: all 0.5s;
+            /* 기본상태 */
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        input.check2:checked+label:after {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* ------------------------- */
+        .toggle {
+            position: relative;
+            display: inline-block;
+        }
+
+        .toggle input {
+            display: none;
+        }
+
+        label[for='toggle'] {
+            display: block;
+            width: 48px;
+            height: 24px;
+            text-indent: -250%;
+            user-select: none;
+        }
+
+        label[for='toggle']::before,
+        label[for='toggle']::after {
+            content: '';
+            position: absolute;
+            cursor: pointer;
+            display: block;
+        }
+
+        label[for='toggle']::before {
+            width: 100%;
+            height: 100%;
+            background-color: #dedede;
+            border-radius: 1em;
+            transition: background .25s ease;
+        }
+
+        label[for='toggle']::after {
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background-color: white;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .45);
+            border-radius: 50%;
+            transition: left 0.25s ease;
+        }
+
+        .toggle input:checked+label::after {
+            left: 24px;
+        }
+
+        .toggle input:checked+label::before {
+            background-color: skyblue;
+        }
+    </style>
+    <!-- darkmode -->
+    <style>
+        .dark{
+            background: #4b4c54;
+            color: ivory;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="#" method="get">
+        <select name="size" id="" class="size">
+            <option>사이즈</option>
+            <option value="m">S</option>
+            <option value="s">M</option>
+            <option value="i">L</option>
+
+        </select>
+        <div class="button_wrap">
+            <div class="checkbox">
+                <input type="checkbox" name="check1" id="check1" class="check1">
+                <label for="ckeck1">big checkbox</label>
+
+                <input type="radio" name="radio1" id="radio1" class="check1">
+                <label for="radio1">big checkbox</label>
+            </div><!-- .checkbox -->
+            <div class="chcekbox">
+                <input type="checkbox" name="check2" id="check2" class="check2">
+                <label for="check2">design checkbox</label>
+            </div>
+            <div class="toggle">
+                <input type="checkbox" name="toggle" id="toggle">
+                <label for="toggle">switch</label>
+            </div>
+    </form>
+    <script>
+        const switchBtn=document.querySelector('#toggle');
+        switchBtn.addEventListener('change',function(){
+            document.body.classList.toggle('dark');
+        })
+    </script>
+</body>
+
+</html>

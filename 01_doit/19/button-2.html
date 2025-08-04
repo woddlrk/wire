@@ -45,7 +45,17 @@
 
   <script>
     // Do it! 체크 박스에 체크하면 버튼 활성화하기 - toggle() 함수 사용
-
-  </script>
+    // Do it! 체크 박스에 체크하면 버튼 활성화하기
+    const check = document.querySelector('#agree');
+    const proceedBtn = document.querySelector('#proceed');
+    // 이벤트핸들러함수로 ()=> 함수 사용시 this는 윈도우객체를 반환
+    // function 키워드 함수는 이벤트 발생 객체 자신을 반환
+    check.addEventListener('change', function () {
+      proceedBtn.classList.toggle('enabled',this.checked);
+      proceedBtn.classList.toggle('disabled',!this.checked);
+      proceedBtn.disabled = !this.checked;
+    })
+     
+</script>
 </body>
 </html>

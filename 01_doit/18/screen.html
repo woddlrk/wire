@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>location Object</title>
 	<style>
 		.container {
-			width:400px;
-			margin:10px auto;
+			width: 400px;
+			margin: 10px auto;
 		}
+
 		.display {
-			margin-top:10px;
-			padding:10px;
-			border:1px solid #222;
-			box-shadow: 1px 0 1px #ccc;			
+			margin-top: 10px;
+			padding: 10px;
+			border: 1px solid #222;
+			box-shadow: 1px 0 1px #ccc;
 		}
+
 		p {
-			font-size:1em;
+			font-size: 1em;
 		}
 	</style>
 </head>
-<body>	
+
+<body>
 	<div class="container">
 		<h2>screen 객체 </h2>
 		<div class="display">
-			<script>
-				// Do it! Screen 객체 연습하기 - 화면 크기 정보 확인하기
-
-			</script>		
-	  </div>
-	</div>		
+		</div>
+	</div>
+	<script>
+		let screenW = screen.width; //작업표시줄 포함, 모니터 전체 크기
+		let screenH = screen.height;
+		let display = document.querySelector('.display');
+		display.innerHTML += `모니터의 너비는 ${screenW}px <br> 
+		모니터의 높이는 ${screenH} px <br>
+		작업표시줄 제외 너비는 ${screen.availWidth}px <br>
+		작업표시줄 제외 높이는 ${screen.availHeight}px <br>
+		실제 페이지(뷰포트) 너비는 ${window.innerWidth}px <br>
+		실제 페이지(뷰포트) 높이는 ${window.innerHeight}px <br>
+		문서 전체 너비 ${document.documentElement.scrollHeight}px <br>
+		`
+	</script>
 </body>
+
 </html>

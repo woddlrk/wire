@@ -20,12 +20,27 @@
 </head>
 <body>
 	<div class="container">
-		<img src="images/cat.jpg" id="cat">	
+		<img src="images/cat.jpg" class="cat">	
+		<img src="images/kitty-1.png" class="cat">	
+		<img src="images/tree-4.jpg" class="cat">	
+		<img src="images/books.png" class="cat">	
 	</div>
   
 	<script>
+    document.querySelectorAll('img').forEach((ele) => {
+      ele.style.width = '200px';
+      ele.style.display = 'block';
+    })
 		// Do it! 이벤트 대상에 접근하기 - this 예약어 사용
-
+    const cat = document.querySelectorAll('.cat');
+    cat.forEach((ele) => {
+      ele.onclick = function (e) {
+        //ele.style.border = '4px solid';
+        this.style.border = '4px solid';
+        console.log(this.src);;
+        
+      }
+    })
 	</script>
 </body>
 </html>

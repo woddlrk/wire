@@ -15,9 +15,40 @@
 	</style>
 </head>
 <body>
-	<script>
+<!-- 	<script>
 		// Do it! for문을 사용해 1부터 1000까지 더하기
+		let sum = 0;
+		//반복문
+		//for(초기값;조건식;증가식)
 
+		for(let i =1; i<1001; i++){
+			//sum = sum + i
+			sum += i;
+		  }
+		document.write(`1부터 1000까지 내가 암산한 결과 ${sum}`)
+	</script>
+ -->	<script>
+		//구구단 5단 만들기
+		//변하는 수의 변수명= j
+		//변하지 않는 수의 변수명= output
+/* 		let output = 5;
+		for(let j = 1; j < 10; j++){
+			output *= j;
+			document.write(`${output}<br>`)
+		}
+ */
+		let output = 5;
+		for(let j = 1; j <=9; j++){
+			//document.write('x');
+			//document.write(j);
+			//document.write('=');
+			//document.write(j*output);
+			//document.write('<br>');
+			//es5
+			//document.write(output + 'x' + j + '=' + j*output + '<br>');
+			//es6 (template literal)
+			document.write(`${output}x${j}=${output * j}<br>`);
+		}
 	</script>
 </body>
 </html>

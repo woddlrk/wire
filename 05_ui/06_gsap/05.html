@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 100vh;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+
+</head>
+
+<body>
+
+        <section>  <!-- background (255, 255, 255) -->
+            <!-- index 번호 0 => 0*100, 0*50 -->
+            <h2>1</h2>
+        </section>
+        <section>
+            <!-- index 번호 1 => 255-1*100,255-1*50 -->
+             <!-- index 번호 1 => 155, 205,205 -->
+            <h2>2</h2>
+            <div class="box"></div>
+        </section>
+        <section> 
+            <!-- index 번호 2=> 255-2*100, 255-2*50 -->
+            <!-- index 번호 2=> 55, 155, 155 -->
+            <h2>3</h2>
+        </section>
+        <!-- gsap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+        <script>
+            // *섹션별 배경색
+            const bg = document.querySelectorAll('section');
+            const colors = {r: 255, g: 255, b: 255 }
+            bg.forEach((o, i) => {
+                o.style.backgroundColor = `rgb(${colors.r - i * 100},${colors.g - i * 50},${colors.b - i * 50})`
+            })
+            /* 스크롤트리거 */
+            gsap.to('.box',{
+                scrollTrigger: '.box', 
+                x: '50vw'
+            })
+
+        </script>
+</body>
+
+</html>
